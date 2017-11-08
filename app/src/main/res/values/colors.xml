@@ -3,4 +3,59 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--背景色纯白色-->
+    <color name="color_bg_white">#ffffff</color>
+    <!--背景色纯黑-->
+    <color name="color_bg_black">#bb000000</color>
+    <!--背景色浅灰-->
+    <color name="color_bg_light_grey">#f3f3f3</color>
+    <!--背景色绿色-->
+    <color name="color_bg_greed">#18a149</color>
+    <!--分割线颜色-->
+    <color name="color_text_e3">#e3e3e3</color>
+    <!--透明颜色-->
+    <color name="color_transparent">#00000000</color>
+    <color name="color_70">#707070</color>
+    <color name="color_bg_f3">#f3f3f3</color>
+    <color name="color_bg_divider_one">#EBF0F2</color>
+    <!--文字用色-->
+    <!--白色 深色按钮文字 顶部导航栏文字-->
+    <color name="color_tv_white">#ffffff</color>
+    <!--浅灰 失效 辅助 事件提示文字-->
+    <color name="color_tv_c3">#c3c3c3</color>
+    <!--次浅灰 提示性文字 输入框提示文字-->
+    <color name="color_tv_88">#888888</color>
+    <!--深色 辅助文字-->
+    <color name="color_tv_61">#616161</color>
+    <!--次深黑 辅助文字 例 重量描述 导航栏副标-->
+    <color name="color_tv_4c">#4c4c4c</color>
+    <!--深黑 商品文字 及文字描述-->
+    <color name="color_tv_39">#393939</color>
+    <!--深黑导航栏文字-->
+    <color name="color_tv_26">#262626</color>
+    <!--主色 红色 结算按钮 下单 重要提示文字-->
+    <color name="color_tv_red">#FF565D</color>
+    <!--主色 绿色 确定 确认提交文字-->
+    <color name="color_tv_green">#18ae49</color>
+    <!--副色 橙色 金额价格提示颜色-->
+    <color name="color_tv_orange">#ff842e</color>
+    <!--副色 绿色 辅助用色 状态色-->
+    <color name="color_tv_green_5c">#5cc67f</color>
+    <!--副色 红色 状态文字提示文字-->
+    <color name="color_tv_red_f3">#f36681</color>
+    <!--背景渐变色-->
+    <color name="color_start">#3de4be</color>
+    <color name="color_end">#40dd75</color>
+    <!--订单详情渐变色-->
+    <color name="color_order_start">#3adbaf</color>
+    <color name="color_order_end">#23db87</color>
+    <!--首页标题栏渐变色-->
+    <color name="color_bg_00_40">#bb000000</color>
+    <color name="color_bg_00_08">#14000000</color>
+    <color name="color_bg_ff_08">#14ffffff</color>
+    <!--搜索框背景颜色-->
+    <color name="color_bg_ff_36">#5bffffff</color>
+    <color name="color_bg_ff_50">#aaffffff</color>
+    <color name="color_e8">#e8e8e8</color>
+    <color name="color_blue">#1296db</color>
 </resources>

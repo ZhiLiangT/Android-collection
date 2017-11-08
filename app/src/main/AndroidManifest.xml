@@ -23,7 +23,9 @@
         <activity android:name=".multi_media.MultiMediaActivity" />
         <activity android:name=".new_features.NewFeaturesActivity" />
         <activity android:name=".external_lib.ExternalLibActivity" />
-        <activity android:name=".multi_media.ac.AudioPlayActivity"></activity>
+        <activity android:name=".multi_media.ac.AudioPlayActivity" />
+        <activity android:name=".external_sdk.ExternalSDKActivity" />
+        <activity android:name=".major_knowledge_point.MajoyKnowPointActivity"></activity>
     </application>
 
 </manifest>
