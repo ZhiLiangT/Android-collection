@@ -2,6 +2,9 @@ package com.tzl.android_collection;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
@@ -18,28 +21,32 @@ import com.tzl.android_collection.multi_media.MultiMediaActivity;
 import com.tzl.android_collection.new_features.NewFeaturesActivity;
 import com.tzl.android_collection.photo_manage.PhotoManageActivity;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
+
     private RecyclerView recyclerView;
     private MainRvAdapter adapter;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.activity_main);
+        initView();
+        initData();
+        initEvent();
     }
 
-    @Override
+
+
     public void initView() {
         recyclerView= (RecyclerView) findViewById(R.id.main_recycler);
     }
-    @Override
+
     public void initData() {
         adapter=new MainRvAdapter(this, DataUtils.getClassifyList());
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(adapter);
     }
-    @Override
+
     public void initEvent() {
         adapter.setOnItemClickListener(new MainRvAdapter.OnItemClickListener() {
             @Override

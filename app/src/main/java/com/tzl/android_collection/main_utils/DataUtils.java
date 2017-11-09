@@ -30,4 +30,13 @@ public class DataUtils {
         list.add(new ClassifyBean(mainNames[8],mainResId[8],8));
         return list;
     }
+//    ist.add(new ClassifyBean(mainNames[0],mainResId[0],0));
+//        list.add(new ClassifyBean(mainNames[1],mainResId[1],1));
+//        list.add(new ClassifyBean(mainNames[2],mainResId[2],2));
+//        list.add(new ClassifyBean(mainNames[3],mainResId[3],3));
+//        list.add(new ClassifyBean(mainNames[4],mainResId[4],4));
+//        list.add(new ClassifyBean(mainNames[5],mainResId[5],5));
+//        list.add(new ClassifyBean(mainNames[6],mainResId[6],6));
+//        list.add(new ClassifyBean(mainNames[7],mainResId[7],7));
+//        list.add(new ClassifyBean(mainNames[8],mainResId[8],8));
 }

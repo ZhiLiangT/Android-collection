@@ -30,7 +30,7 @@ public class MainRvAdapter extends RecyclerView.Adapter<MainRvAdapter.ViewHolder
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view=inflater.inflate(R.layout.item_main,null);
+        View view=inflater.inflate(R.layout.item_main,parent,false);
         return new ViewHolder(view);
     }
 

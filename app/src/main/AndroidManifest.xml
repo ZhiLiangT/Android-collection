@@ -25,7 +25,10 @@
         <activity android:name=".external_lib.ExternalLibActivity" />
         <activity android:name=".multi_media.ac.AudioPlayActivity" />
         <activity android:name=".external_sdk.ExternalSDKActivity" />
-        <activity android:name=".major_knowledge_point.MajoyKnowPointActivity"></activity>
+        <activity android:name=".major_knowledge_point.MajoyKnowPointActivity" />
+        <activity android:name=".external_lib.rxjava.RxJavaTestActivity">
+
+        </activity>
     </application>
 
 </manifest>

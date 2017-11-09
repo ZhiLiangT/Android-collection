@@ -13,10 +13,12 @@ public abstract class  BaseActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
+        initContentView();
         initView();
         initData();
         initEvent();
     }
+    public abstract void initContentView();
     public abstract void initView();
     public abstract void initData();
     public abstract void initEvent();
