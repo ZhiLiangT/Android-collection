@@ -14,8 +14,8 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
 public class RxJavaTestActivity extends BaseActivity implements View.OnClickListener{
-    private Button btEasy1;
 
+    private Button btEasy1;
 
     @Override
     public void initContentView() {
@@ -64,7 +64,7 @@ public class RxJavaTestActivity extends BaseActivity implements View.OnClickList
 
             @Override
             public void onNext(String value) {
-                Log.v("RxJavaTestActivity","value : "+value);
+                Log.i("RxJavaTestActivity","value : "+value);
             }
 
             @Override
