@@ -28,6 +28,7 @@
     <!-- 用于申请获取蓝牙信息进行室内定位 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -43,9 +44,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".custom_view.CustomViewActivity" />
-        <activity android:name=".animator.AnimatorActivity" >
-
-        </activity>
+        <activity android:name=".animator.AnimatorActivity" />
         <activity android:name=".database.DatabaseActivity" />
         <activity android:name=".photo_manage.PhotoManageActivity" />
         <activity android:name=".multi_media.MultiMediaActivity" />
@@ -54,9 +53,10 @@
         <activity android:name=".multi_media.ac.AudioPlayActivity" />
         <activity android:name=".external_sdk.ExternalSDKActivity" />
         <activity android:name=".major_knowledge_point.MajoyKnowPointActivity" />
-        <activity android:name=".external_lib.rxjava.RxJavaTestActivity">
-
-        </activity>
+        <activity android:name=".external_lib.rxjava.RxJavaTestActivity" />
+        <activity android:name=".external_lib.rxjava.RxJavaOperatorActivity" />
+        <activity android:name=".external_lib.rxjava.RxJavaThreadControlActivity" />
+        <activity android:name=".external_lib.rxjava.FlowableTestActivity"></activity>
     </application>
 
 </manifest>

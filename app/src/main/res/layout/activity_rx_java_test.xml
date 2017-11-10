@@ -11,4 +11,124 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:text="简单练习1" />
+
+    <Button
+        android:id="@+id/rxjava_easy_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/rxjava_easy_1"
+        android:layout_toRightOf="@+id/rxjava_easy_1"
+        android:text="使用just创建Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_1"
+        android:text="使用from创建Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rxjava_easy_2"
+        android:layout_toEndOf="@+id/rxjava_easy_3"
+        android:layout_toRightOf="@+id/rxjava_easy_3"
+        android:text="使用defer创建" />
+
+    <Button
+        android:id="@+id/rxjava_easy_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_3"
+        android:text="使用interval创建固定时间间隔的Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_5"
+        android:text="使用range()创建一个发送特定整数序列的Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_6"
+        android:text="使用timer创建一个给定延时后发送值的Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_7"
+        android:text="使用repeat创建一个重复发射特定数据的Observable" />
+
+    <Button
+        android:id="@+id/rxjava_easy_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_8"
+        android:text="简明使用" />
+
+    <Button
+        android:id="@+id/rxjava_easy_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="操作符"
+        android:layout_below="@+id/rxjava_easy_8"
+        android:layout_toLeftOf="@+id/rxjava_easy_4"
+        android:layout_toStartOf="@+id/rxjava_easy_4" />
+
+    <Button
+        android:id="@+id/rxjava_easy_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RxJava线程调度"
+        android:layout_below="@+id/rxjava_easy_8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/rxjava_easy_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_9"
+        android:layout_marginTop="16dp"
+        android:text="BackPressure背压处理-制造Error" />
+
+    <Button
+        android:id="@+id/rxjava_easy_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_12"
+        android:text="处理背压错误1" />
+
+    <Button
+        android:id="@+id/rxjava_easy_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rxjava_easy_13"
+        android:layout_marginTop="15dp"
+        android:text="Flowable详解" />
+
 </RelativeLayout>

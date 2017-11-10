@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.external_lib.rxjava.RxJavaOperatorActivity">
+
+    <Button
+        android:id="@+id/rx_operator_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:text="map操作符" />
+
+    <Button
+        android:id="@+id/rx_operator_flatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rx_operator_map"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/rx_operator_map"
+        android:layout_toRightOf="@+id/rx_operator_map"
+        android:text="flatmap操作符" />
+
+    <Button
+        android:id="@+id/rx_operator_conncatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="conncat操作符"
+        android:layout_below="@+id/rx_operator_map"
+        android:layout_alignLeft="@+id/rx_operator_map"
+        android:layout_alignStart="@+id/rx_operator_map"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/rx_operator_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zip操作符的使用"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/rx_operator_conncatmap"
+        android:layout_alignBottom="@+id/rx_operator_conncatmap"
+        android:layout_toRightOf="@+id/rx_operator_conncatmap"
+        android:layout_toEndOf="@+id/rx_operator_conncatmap" />
+</RelativeLayout>
