@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.major_knowledge_point.receiver.BroadcastReceiverActivity">
+
+    <Button
+        android:id="@+id/bro_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="监听SDcard是否挂在" />
+
+    <Button
+        android:id="@+id/bro_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@+id/bro_bt1"
+        android:layout_alignLeft="@+id/bro_bt1"
+        android:layout_alignStart="@+id/bro_bt1"
+        android:layout_marginTop="18dp" />
+</RelativeLayout>

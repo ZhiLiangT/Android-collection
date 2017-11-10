@@ -40,6 +40,7 @@ public class RxJavaTestActivity extends BaseActivity implements View.OnClickList
     private Button btEasy12;
     private Button btEasy13;
     private Button btEasy14;
+    private Button btEasy15;
 
     @Override
     public void initContentView() {
@@ -62,6 +63,7 @@ public class RxJavaTestActivity extends BaseActivity implements View.OnClickList
         btEasy12= (Button) findViewById(R.id.rxjava_easy_12);
         btEasy13= (Button) findViewById(R.id.rxjava_easy_13);
         btEasy14= (Button) findViewById(R.id.rxjava_easy_14);
+        btEasy15= (Button) findViewById(R.id.rxjava_easy_15);
     }
 
     @Override
@@ -85,6 +87,7 @@ public class RxJavaTestActivity extends BaseActivity implements View.OnClickList
         btEasy12.setOnClickListener(this);
         btEasy13.setOnClickListener(this);
         btEasy14.setOnClickListener(this);
+        btEasy15.setOnClickListener(this);
     }
 
     @Override
@@ -134,6 +137,10 @@ public class RxJavaTestActivity extends BaseActivity implements View.OnClickList
             case R.id.rxjava_easy_14:
                 Intent intetnFlowable=new Intent(this,FlowableTestActivity.class);
                 startActivity(intetnFlowable);
+                break;
+            case R.id.rxjava_easy_15:
+                Intent intetnExample=new Intent(this,ExamplePracticeActivity.class);
+                startActivity(intetnExample);
                 break;
         }
     }

@@ -1,15 +1,56 @@
 package com.tzl.android_collection.major_knowledge_point;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
+import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
+import com.tzl.android_collection.major_knowledge_point.receiver.BroadcastReceiverActivity;
 
-public class MajoyKnowPointActivity extends AppCompatActivity {
+public class MajoyKnowPointActivity extends BaseActivity implements View.OnClickListener{
+    private Button bt1,bt2,bt3,bt4;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initContentView() {
         setContentView(R.layout.activity_majoy_know_point);
+    }
+
+    @Override
+    public void initView() {
+        bt1= (Button) findViewById(R.id.major_bt1);
+        bt2= (Button) findViewById(R.id.major_bt2);
+        bt3= (Button) findViewById(R.id.major_bt3);
+        bt4= (Button) findViewById(R.id.major_bt4);
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initEvent() {
+        bt1.setOnClickListener(this);
+        bt2.setOnClickListener(this);
+        bt3.setOnClickListener(this);
+        bt4.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.major_bt1:
+                Intent intentReceiver=new Intent(this, BroadcastReceiverActivity.class);
+                startActivity(intentReceiver);
+                break;
+            case R.id.major_bt2:
+                break;
+            case R.id.major_bt3:
+                break;
+            case R.id.major_bt4:
+                break;
+        }
     }
 }
