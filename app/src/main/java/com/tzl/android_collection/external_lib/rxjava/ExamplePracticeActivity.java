@@ -1,6 +1,7 @@
 package com.tzl.android_collection.external_lib.rxjava;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -10,6 +11,9 @@ import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
 import com.tzl.android_collection.external_lib.rxjava.utils.DataUtils;
 import com.tzl.android_collection.main_utils.BitmapUtils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -25,7 +29,7 @@ import io.reactivex.schedulers.Schedulers;
 public class ExamplePracticeActivity extends BaseActivity implements View.OnClickListener{
     private TextView tvContent;
     private ImageView ivImg;
-    private Button bt1,bt2,bt3;
+    private Button bt1,bt2,bt3,bt4;
     private String[] imgUrlList;
     private StringBuilder builder;
     private String host="https:";
@@ -42,6 +46,7 @@ public class ExamplePracticeActivity extends BaseActivity implements View.OnClic
         bt1= (Button) findViewById(R.id.rx_example_bt1);
         bt2= (Button) findViewById(R.id.rx_example_bt2);
         bt3= (Button) findViewById(R.id.rx_example_bt3);
+        bt4= (Button) findViewById(R.id.rx_example_bt4);
     }
 
     @Override
@@ -55,6 +60,7 @@ public class ExamplePracticeActivity extends BaseActivity implements View.OnClic
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
+        bt4.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +74,9 @@ public class ExamplePracticeActivity extends BaseActivity implements View.OnClic
                 break;
             case R.id.rx_example_bt3:
                 test3();
+                break;
+            case R.id.rx_example_bt4:
+                test4();
                 break;
         }
     }
@@ -189,7 +198,11 @@ public class ExamplePracticeActivity extends BaseActivity implements View.OnClic
         }).flatMap(new Function<Integer, ObservableSource<String>>() {
             @Override
             public ObservableSource<String> apply(Integer integer) throws Exception {
-                return null;
+                List<String> list=new ArrayList<String>();
+                for (int i=0;i<3;i++){
+                    list.add("this is "+integer);
+                }
+                return Observable.fromIterable(list);
             }
         }).subscribe(new Observer<String>() {
             @Override
@@ -199,7 +212,7 @@ public class ExamplePracticeActivity extends BaseActivity implements View.OnClic
 
             @Override
             public void onNext(String value) {
-
+                Log.i("ExamplePracticeActivity","flat -- value --"+value);
             }
 
             @Override
