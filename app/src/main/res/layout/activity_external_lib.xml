@@ -13,4 +13,15 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/lib_retrofit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/lib_rxjava"
+        android:layout_toRightOf="@+id/lib_rxjava"
+        android:text="retrofit2" />
 </RelativeLayout>
