@@ -1,6 +1,6 @@
 package com.tzl.android_collection.external_lib.retrofit2.inter;
 
-import com.tzl.android_collection.external_lib.retrofit2.bean.Test;
+import com.tzl.android_collection.external_lib.retrofit2.bean.GankBean;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -19,6 +19,6 @@ public interface AppURL {
     @GET("users/{user}/repos")
     Call<ResponseBody> listRepos(@Path("user")String user);
 
-    @GET("users/{user}/repos")
-    Call<Test> getTestInfo();
+    @GET("api/data/Android/10/1")
+    Call<GankBean> getTestInfo();
 }
