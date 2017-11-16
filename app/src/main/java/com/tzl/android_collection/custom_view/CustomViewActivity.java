@@ -1,15 +1,56 @@
 package com.tzl.android_collection.custom_view;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
+import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
+import com.tzl.android_collection.custom_view.ac.ProgressTestActivity;
 
-public class CustomViewActivity extends AppCompatActivity {
+public class CustomViewActivity extends BaseActivity implements View.OnClickListener{
+    private Button bt1,bt2,bt3,bt4;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initContentView() {
         setContentView(R.layout.activity_custom_view);
+    }
+
+    @Override
+    public void initView() {
+        bt1= (Button) findViewById(R.id.custom_bt1);
+        bt1.setOnClickListener(this);
+        bt2= (Button) findViewById(R.id.custom_bt2);
+        bt2.setOnClickListener(this);
+        bt3= (Button) findViewById(R.id.custom_bt3);
+        bt3.setOnClickListener(this);
+        bt4= (Button) findViewById(R.id.custom_bt4);
+        bt4.setOnClickListener(this);
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initEvent() {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.custom_bt1:
+                break;
+            case R.id.custom_bt2:
+                Intent intentPro=new Intent(this, ProgressTestActivity.class);
+                startActivity(intentPro);
+                break;
+            case R.id.custom_bt3:
+                break;
+            case R.id.custom_bt4:
+                break;
+        }
     }
 }

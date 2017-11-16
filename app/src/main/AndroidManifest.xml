@@ -59,7 +59,11 @@
         <activity android:name=".external_lib.rxjava.FlowableTestActivity" />
         <activity android:name=".external_lib.rxjava.ExamplePracticeActivity" />
         <activity android:name=".major_knowledge_point.receiver.BroadcastReceiverActivity" />
-        <activity android:name=".external_lib.retrofit2.Retrofit2TestActivity"></activity>
+        <activity android:name=".external_lib.retrofit2.Retrofit2TestActivity" />
+        <activity android:name=".custom_view.ac.CustomViewPagerTestActivity" />
+        <activity android:name=".common.CommonSkillActivity" />
+        <activity android:name=".common.ac.FileManagerTestActivity" />
+        <activity android:name=".custom_view.ac.ProgressTestActivity"></activity>
     </application>
 
 </manifest>

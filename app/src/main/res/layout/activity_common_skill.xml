@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.common.CommonSkillActivity">
+
+    <Button
+        android:id="@+id/common_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="1dp"
+        android:text="文件管理,获取制定Path下的所有文件"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/common_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取本机所有应用分为系统应用和第三方应用"
+        app:layout_constraintStart_toStartOf="@+id/common_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/common_bt1" />
+
+    <Button
+        android:id="@+id/common_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不同位置弹出popupWindow"
+        app:layout_constraintStart_toStartOf="@+id/common_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/common_bt2" />
+
+    <Button
+        android:id="@+id/common_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/common_bt3"
+        app:layout_constraintTop_toBottomOf="@+id/common_bt3" />
+</android.support.constraint.ConstraintLayout>

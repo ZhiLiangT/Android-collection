@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.tzl.android_collection.animator.AnimatorActivity;
+import com.tzl.android_collection.common.CommonSkillActivity;
 import com.tzl.android_collection.custom_view.CustomViewActivity;
 import com.tzl.android_collection.database.DatabaseActivity;
 import com.tzl.android_collection.external_lib.ExternalLibActivity;
@@ -76,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 8:
                         intent.setClass(MainActivity.this, NewFeaturesActivity.class);
+                        break;
+                    case 9:
+                        intent.setClass(MainActivity.this, CommonSkillActivity.class);
                         break;
                 }
                 startActivity(intent);

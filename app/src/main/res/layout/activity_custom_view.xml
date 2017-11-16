@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context="com.tzl.android_collection.custom_view.CustomViewActivity">
 
+    <Button
+        android:id="@+id/custom_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="等比例控件根据宽和比例设置高"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/custom_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义进度条"
+        app:layout_constraintStart_toStartOf="@+id/custom_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/custom_bt1" />
+
+    <Button
+        android:id="@+id/custom_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="ViewPager指示器"
+        app:layout_constraintStart_toStartOf="@+id/custom_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/custom_bt2" />
+
+    <Button
+        android:id="@+id/custom_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="自定义密码框"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_bt3" />
 </android.support.constraint.ConstraintLayout>

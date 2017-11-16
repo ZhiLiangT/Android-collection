@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Histogram_View">
+        <attr name="histogramColor" format="color"/>
+        <attr name="histogtamTitleColor" format="color"/>
+        <attr name="histogtamLineColor" format="color"/>
+        <attr name="histogramMax" format="integer"/>
+        <attr name="histogtamNameX" format="string"/>
+        <attr name="histogtamNameY" format="string"/>
+        <attr name="histogtamTitleSize" format="dimension"/>
+        <attr name="histogtamLevelNum" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="IndicatorView">
+        <attr name="indicatorRadius" format="dimension"/>
+        <attr name="indicatorStroke" format="dimension"/>
+        <attr name="indicatorDivide" format="dimension"/>
+        <attr name="indicatorEmptyColor" format="color"/>
+        <attr name="indicatorFillColor" format="color"/>
+        <attr name="indicatorCount" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="XCircleIndicator">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="fillColor" format="color" />
+        <!-- 未选中圆点的颜色 -->
+        <attr name="strokeColor" format="color" />
+        <!-- 圆点的大小 -->
+        <attr name="radius" format="dimension" />
+        <!-- 圆点间间距的大小 -->
+        <attr name="circleInterval" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LoweImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="PasswordInputView">
+        <attr name="pivBorderColor" format="color"/>
+        <attr name="pivBorderWidth" format="dimension"/>
+        <attr name="pivBorderRadius" format="dimension"/>
+        <attr name="pivPasswordColor" format="color"/>
+        <attr name="pivPasswordWidth" format="dimension"/>
+        <attr name="pivPasswordRadius" format="dimension"/>
+        <attr name="pivPasswordLength" format="integer"/>
+    </declare-styleable>
+
+</resources>
