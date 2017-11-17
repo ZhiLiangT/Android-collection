@@ -12,6 +12,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
+ * 进度条 圆形
  * Created by tianzl on 2017/11/3.
  */
 

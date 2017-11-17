@@ -11,6 +11,9 @@ import com.tzl.android_collection.custom_view.view.Sample08ObjectAnimatorView;
 import com.tzl.android_collection.custom_view.view.SportsLinearView;
 import com.tzl.android_collection.custom_view.view.SportsView;
 
+/**
+ * 进度条演示
+ */
 public class ProgressTestActivity extends BaseActivity implements View.OnClickListener {
     private Sample08ObjectAnimatorView view1;
     private SportsView view2;

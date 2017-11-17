@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import com.tzl.android_collection.R;
 
 /**
- *
+ * 等比例控件
  */
 public class LoweImageView extends android.support.v7.widget.AppCompatImageView {
     /** 

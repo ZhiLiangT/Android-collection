@@ -18,6 +18,7 @@ import java.util.List;
 
 
 /**
+ * 柱状图
  * Created by tianzl on 2017/11/1.
  */
 

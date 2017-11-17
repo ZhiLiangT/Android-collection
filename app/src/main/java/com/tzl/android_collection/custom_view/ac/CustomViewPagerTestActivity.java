@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.tzl.android_collection.R;
 
+/**
+ * ViewPager指示器
+ */
 public class CustomViewPagerTestActivity extends AppCompatActivity {
 
     @Override

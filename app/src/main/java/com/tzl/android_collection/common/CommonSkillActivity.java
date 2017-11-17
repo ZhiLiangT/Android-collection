@@ -1,15 +1,38 @@
 package com.tzl.android_collection.common;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
+import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
 
-public class CommonSkillActivity extends AppCompatActivity {
+/**
+ * 常用知识点
+ */
+public class CommonSkillActivity extends BaseActivity implements View.OnClickListener{
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void initContentView() {
         setContentView(R.layout.activity_common_skill);
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    public void initEvent() {
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

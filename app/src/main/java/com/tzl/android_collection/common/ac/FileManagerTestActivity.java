@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.tzl.android_collection.R;
 
+/**
+ * 文件管理
+ */
 public class FileManagerTestActivity extends AppCompatActivity {
 
     @Override

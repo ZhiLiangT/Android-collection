@@ -11,6 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
+ * 进度条 线性
  * Created by tianzl on 2017/11/3.
  */
 

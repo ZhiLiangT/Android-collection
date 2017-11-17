@@ -6,8 +6,12 @@ import android.widget.Button;
 
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
+import com.tzl.android_collection.custom_view.ac.CustomViewPagerTestActivity;
 import com.tzl.android_collection.custom_view.ac.ProgressTestActivity;
 
+/**
+ * 自定义View
+ */
 public class CustomViewActivity extends BaseActivity implements View.OnClickListener{
     private Button bt1,bt2,bt3,bt4;
 
@@ -48,6 +52,8 @@ public class CustomViewActivity extends BaseActivity implements View.OnClickList
                 startActivity(intentPro);
                 break;
             case R.id.custom_bt3:
+                Intent intentVP=new Intent(this, CustomViewPagerTestActivity.class);
+                startActivity(intentVP);
                 break;
             case R.id.custom_bt4:
                 break;

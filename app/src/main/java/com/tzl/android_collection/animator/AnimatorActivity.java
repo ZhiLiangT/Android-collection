@@ -8,6 +8,9 @@ import android.view.View;
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
 
+/**
+ * Android动画
+ */
 public class AnimatorActivity extends BaseActivity implements View.OnClickListener {
 
 
