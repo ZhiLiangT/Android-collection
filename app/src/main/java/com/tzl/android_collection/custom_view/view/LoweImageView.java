@@ -14,7 +14,8 @@ public class LoweImageView extends android.support.v7.widget.AppCompatImageView 
     /** 
      * 图片比例. 比例=宽/高 
      */  
-    private float mRatio;  
+    private float mRatio;
+    private int width;
   
     public LoweImageView(Context context) {  
         this(context, null);  
@@ -42,22 +43,30 @@ public class LoweImageView extends android.support.v7.widget.AppCompatImageView 
                 R.styleable.LoweImageView);
         mRatio = typedArray.getFloat(R.styleable.LoweImageView_ratio, 0);  
         typedArray.recycle();  
-    }  
+    }
+    public void setRatio(float ratio){
+        mRatio=ratio;
+        invalidate();
+    }
+    public void setWidth(int wid){
+        width=wid;
+        invalidate();
+    }
   
     @Override  
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {  
         // 宽模式  
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);  
         // 宽大小  
-        int widthSize = MeasureSpec.getSize(widthMeasureSpec);  
+        width = MeasureSpec.getSize(widthMeasureSpec);
         // 高大小  
         int heightSize;  
         // 只有宽的值是精确的才对高做精确的比例校对  
         if (widthMode == MeasureSpec.EXACTLY && mRatio > 0) {  
-            heightSize = (int) (widthSize / mRatio + 0.5f);  
+            heightSize = (int) (width / mRatio + 0.5f);
             heightMeasureSpec = MeasureSpec.makeMeasureSpec(heightSize,  
                     MeasureSpec.EXACTLY);  
         }  
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);  
+        super.onMeasure(width, heightMeasureSpec);
     }  
 }  

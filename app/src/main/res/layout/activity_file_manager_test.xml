@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context="com.tzl.android_collection.common.ac.FileManagerTestActivity">
 
+    <Button
+        android:id="@+id/file_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="指定固定文件夹"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/file_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内置SD卡根目录为Path"
+        app:layout_constraintStart_toStartOf="@+id/file_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/file_bt1" />
+
+    <Button
+        android:id="@+id/file_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外置SD卡根目录为Path"
+        app:layout_constraintStart_toStartOf="@+id/file_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/file_bt2" />
 </android.support.constraint.ConstraintLayout>

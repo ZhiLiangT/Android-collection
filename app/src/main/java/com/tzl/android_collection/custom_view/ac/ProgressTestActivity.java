@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.view.View;
+import android.widget.TextView;
 
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
@@ -18,6 +19,7 @@ public class ProgressTestActivity extends BaseActivity implements View.OnClickLi
     private Sample08ObjectAnimatorView view1;
     private SportsView view2;
     private SportsLinearView view3;
+    private TextView textView;
 
 
     @Override
@@ -30,6 +32,7 @@ public class ProgressTestActivity extends BaseActivity implements View.OnClickLi
         view1= (Sample08ObjectAnimatorView) findViewById(R.id.progress_1);
         view2= (SportsView) findViewById(R.id.progress_2);
         view3= (SportsLinearView) findViewById(R.id.progress_3);
+        textView= (TextView) findViewById(R.id.progress_4);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -41,13 +44,23 @@ public class ProgressTestActivity extends BaseActivity implements View.OnClickLi
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float currentValue = (float) animation.getAnimatedValue();
-                //animatorView.setProgress(currentValue);
+                view1.setProgress(currentValue);
                 view2.setProgress(currentValue);
                 view3.setProgress(currentValue);
 
             }
         });
         anim.start();
+
+        ValueAnimator animator = ValueAnimator.ofArgb( 0xffE91E63, 0xff2196F3);
+        animator.setDuration(10000);
+        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                textView.setBackgroundColor((Integer) animation.getAnimatedValue());
+            }
+        });
+        animator.start();
 
     }
 

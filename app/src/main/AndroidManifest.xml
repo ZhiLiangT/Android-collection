@@ -63,7 +63,9 @@
         <activity android:name=".custom_view.ac.CustomViewPagerTestActivity" />
         <activity android:name=".common.CommonSkillActivity" />
         <activity android:name=".common.ac.FileManagerTestActivity" />
-        <activity android:name=".custom_view.ac.ProgressTestActivity"></activity>
+        <activity android:name=".custom_view.ac.ProgressTestActivity" />
+        <activity android:name=".animator.ac.ColorGradientActivity" />
+        <activity android:name=".custom_view.ac.LoweTestActivity"></activity>
     </application>
 
 </manifest>
