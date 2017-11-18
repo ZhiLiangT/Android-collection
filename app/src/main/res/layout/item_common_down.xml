@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/item_res_img"
+        android:src="@mipmap/file_mp3"
+        android:padding="10dp"
+        android:layout_width="60dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/item_res_name"
+        android:text="未知名字"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/item_res_curr_speed"
+        android:layout_toRightOf="@+id/item_res_img"
+        android:layout_marginTop="8dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/item_res_curr_speed"
+        android:text="0.12K/S"
+        android:textSize="12sp"
+        android:layout_above="@+id/item_res_seek"
+        android:layout_toRightOf="@+id/item_res_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_res_total_speed"
+        android:text="0.12K/S"
+        android:textSize="12sp"
+        android:layout_alignRight="@+id/item_res_seek"
+        android:layout_above="@+id/item_res_seek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/item_res_seek"
+        android:maxHeight="5dp"
+        android:thumb="@null"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/item_res_pause"
+        android:layout_toRightOf="@+id/item_res_img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <Button
+        android:id="@+id/item_res_delordown"
+        android:text="删除"
+        android:textColor="#C0C1C2"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/res_lib_rignt_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/item_res_pause"
+        android:layout_toLeftOf="@+id/item_res_delordown"
+        android:text="暂停"
+        android:layout_marginRight="10dp"
+        android:textColor="#4CAB3F"
+        android:background="@drawable/res_lib_pause_frame"
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

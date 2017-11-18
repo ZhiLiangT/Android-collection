@@ -36,7 +36,7 @@
         android:id="@+id/common_bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="后台多任务断点下载"
         app:layout_constraintStart_toStartOf="@+id/common_bt3"
         app:layout_constraintTop_toBottomOf="@+id/common_bt3" />
 </android.support.constraint.ConstraintLayout>

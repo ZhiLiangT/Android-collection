@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity">
+
+    <Button
+        android:id="@+id/service_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="启动Service"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/service_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="停止Service"
+        app:layout_constraintStart_toEndOf="@+id/service_bt1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/service_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt1"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt1" />
+
+    <Button
+        android:id="@+id/service_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解除绑定Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt2"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt2" />
+
+    <Button
+        android:id="@+id/service_bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建前台Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt3"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt3" />
+
+    <Button
+        android:id="@+id/service_bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="销毁前台Service"
+        app:layout_constraintStart_toEndOf="@+id/service_bt5"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt4" />
+
+    <Button
+        android:id="@+id/service_bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动远程Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt5"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt5" />
+
+    <Button
+        android:id="@+id/service_bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭远程Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt10"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt6" />
+
+    <Button
+        android:id="@+id/service_bt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定远程Service"
+        app:layout_constraintStart_toStartOf="@+id/service_bt7"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt7" />
+
+    <Button
+        android:id="@+id/service_bt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="解除绑定远程Service"
+        app:layout_constraintStart_toEndOf="@+id/service_bt7"
+        app:layout_constraintTop_toBottomOf="@+id/service_bt8" />
+</android.support.constraint.ConstraintLayout>

@@ -58,4 +58,7 @@
     <color name="color_bg_ff_50">#aaffffff</color>
     <color name="color_e8">#e8e8e8</color>
     <color name="color_blue">#1296db</color>
+
+    <color name="seek_curr">#F00001</color>
+    <color name="seek_end">#E0E1E5</color>
 </resources>

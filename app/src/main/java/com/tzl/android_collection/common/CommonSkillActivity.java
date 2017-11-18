@@ -7,13 +7,14 @@ import android.widget.Button;
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
 import com.tzl.android_collection.common.ac.FileManagerTestActivity;
+import com.tzl.android_collection.common.ac.ManyTaskDownActivity;
 
 /**
  * 常用知识点
  */
 public class CommonSkillActivity extends BaseActivity implements View.OnClickListener{
 
-    private Button bt1,bt2,bt3;
+    private Button bt1,bt2,bt3,bt4;
 
     @Override
     public void initContentView() {
@@ -25,6 +26,7 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
         bt1= (Button) findViewById(R.id.common_bt1);
         bt2= (Button) findViewById(R.id.common_bt2);
         bt3= (Button) findViewById(R.id.common_bt3);
+        bt4= (Button) findViewById(R.id.common_bt4);
     }
 
     @Override
@@ -37,6 +39,7 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
+        bt4.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +52,10 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
             case R.id.common_bt2:
                 break;
             case R.id.common_bt3:
+                break;
+            case R.id.common_bt4:
+                Intent intentDown=new Intent(this, ManyTaskDownActivity.class);
+                startActivity(intentDown);
                 break;
         }
     }

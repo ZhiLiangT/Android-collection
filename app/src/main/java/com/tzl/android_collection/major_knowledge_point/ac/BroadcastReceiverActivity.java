@@ -1,4 +1,4 @@
-package com.tzl.android_collection.major_knowledge_point.receiver;
+package com.tzl.android_collection.major_knowledge_point.ac;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

@@ -6,7 +6,8 @@ import android.widget.Button;
 
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
-import com.tzl.android_collection.major_knowledge_point.receiver.BroadcastReceiverActivity;
+import com.tzl.android_collection.major_knowledge_point.ac.BroadcastReceiverActivity;
+import com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity;
 
 public class MajoyKnowPointActivity extends BaseActivity implements View.OnClickListener{
     private Button bt1,bt2,bt3,bt4;
@@ -46,6 +47,8 @@ public class MajoyKnowPointActivity extends BaseActivity implements View.OnClick
                 startActivity(intentReceiver);
                 break;
             case R.id.major_bt2:
+                Intent intentService=new Intent(this, ServiceTestActivity.class);
+                startActivity(intentService);
                 break;
             case R.id.major_bt3:
                 break;

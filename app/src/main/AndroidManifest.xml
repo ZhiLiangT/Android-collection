@@ -58,14 +58,29 @@
         <activity android:name=".external_lib.rxjava.RxJavaThreadControlActivity" />
         <activity android:name=".external_lib.rxjava.FlowableTestActivity" />
         <activity android:name=".external_lib.rxjava.ExamplePracticeActivity" />
-        <activity android:name=".major_knowledge_point.receiver.BroadcastReceiverActivity" />
+        <activity android:name=".major_knowledge_point.ac.BroadcastReceiverActivity" />
         <activity android:name=".external_lib.retrofit2.Retrofit2TestActivity" />
         <activity android:name=".custom_view.ac.CustomViewPagerTestActivity" />
         <activity android:name=".common.CommonSkillActivity" />
         <activity android:name=".common.ac.FileManagerTestActivity" />
         <activity android:name=".custom_view.ac.ProgressTestActivity" />
         <activity android:name=".animator.ac.ColorGradientActivity" />
-        <activity android:name=".custom_view.ac.LoweTestActivity"></activity>
+        <activity android:name=".custom_view.ac.LoweTestActivity" />
+        <activity android:name=".common.ac.ManyTaskDownActivity" />
+        <activity android:name=".major_knowledge_point.ac.ServiceTestActivity" />
+
+        <service android:name=".major_knowledge_point.service.TestService" />
+        <service
+            android:name=".major_knowledge_point.service.ReceptionService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service android:name=".major_knowledge_point.service.LongRangeService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.tzl.service.LongRangeService"/>
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
