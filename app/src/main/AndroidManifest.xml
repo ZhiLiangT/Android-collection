@@ -58,7 +58,7 @@
         <activity android:name=".external_lib.rxjava.RxJavaThreadControlActivity" />
         <activity android:name=".external_lib.rxjava.FlowableTestActivity" />
         <activity android:name=".external_lib.rxjava.ExamplePracticeActivity" />
-        <activity android:name=".major_knowledge_point.ac.BroadcastReceiverActivity" />
+        <activity android:name=".major_knowledge_point.receiver.BroadcastReceiverActivity" />
         <activity android:name=".external_lib.retrofit2.Retrofit2TestActivity" />
         <activity android:name=".custom_view.ac.CustomViewPagerTestActivity" />
         <activity android:name=".common.CommonSkillActivity" />
@@ -67,7 +67,7 @@
         <activity android:name=".animator.ac.ColorGradientActivity" />
         <activity android:name=".custom_view.ac.LoweTestActivity" />
         <activity android:name=".common.ac.ManyTaskDownActivity" />
-        <activity android:name=".major_knowledge_point.ac.ServiceTestActivity" />
+        <activity android:name=".major_knowledge_point.service.ui.ac.ServiceTestActivity" />
 
         <service android:name=".major_knowledge_point.service.TestService" />
         <service
@@ -81,7 +81,7 @@
                 <action android:name="com.tzl.service.LongRangeService" />
             </intent-filter>
         </service>
-        <activity android:name=".major_knowledge_point.ac.NoticePracticeActivity"/>
+        <activity android:name=".major_knowledge_point.notice.NoticePracticeActivity"/>
         <service android:name=".major_knowledge_point.service.MyIntentService"/>
     </application>
 

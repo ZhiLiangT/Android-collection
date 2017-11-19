@@ -6,9 +6,9 @@ import android.widget.Button;
 
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
-import com.tzl.android_collection.major_knowledge_point.ac.BroadcastReceiverActivity;
-import com.tzl.android_collection.major_knowledge_point.ac.NoticePracticeActivity;
-import com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity;
+import com.tzl.android_collection.major_knowledge_point.receiver.BroadcastReceiverActivity;
+import com.tzl.android_collection.major_knowledge_point.notice.NoticePracticeActivity;
+import com.tzl.android_collection.major_knowledge_point.service.ui.ac.ServiceTestActivity;
 
 public class MajoyKnowPointActivity extends BaseActivity implements View.OnClickListener{
     private Button bt1,bt2,bt3,bt4,bt5;

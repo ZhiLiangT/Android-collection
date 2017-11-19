@@ -12,7 +12,7 @@ import android.support.annotation.RequiresApi;
 import android.util.Log;
 
 import com.tzl.android_collection.R;
-import com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity;
+import com.tzl.android_collection.major_knowledge_point.service.ui.ac.ServiceTestActivity;
 
 public class ReceptionService extends Service {
 

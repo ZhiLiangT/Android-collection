@@ -4,91 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity">
+    tools:context=".major_knowledge_point.service.ui.ac.ServiceTestActivity">
 
-    <Button
-        android:id="@+id/service_bt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
-        android:text="启动Service"
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/service_tablayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/service_viewPager"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/service_bt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:text="停止Service"
-        app:layout_constraintStart_toEndOf="@+id/service_bt1"
-        app:layout_constraintTop_toTopOf="parent" />
+    </android.support.design.widget.TabLayout>
 
-    <Button
-        android:id="@+id/service_bt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="绑定Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt1"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt1" />
-
-    <Button
-        android:id="@+id/service_bt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="解除绑定Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt2"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt2" />
-
-    <Button
-        android:id="@+id/service_bt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="创建前台Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt3"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt3" />
-
-    <Button
-        android:id="@+id/service_bt6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:text="销毁前台Service"
-        app:layout_constraintStart_toEndOf="@+id/service_bt5"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt4" />
-
-    <Button
-        android:id="@+id/service_bt7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="启动远程Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt5"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt5" />
-
-    <Button
-        android:id="@+id/service_bt8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="关闭远程Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt10"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt6" />
-
-    <Button
-        android:id="@+id/service_bt9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="绑定远程Service"
-        app:layout_constraintStart_toStartOf="@+id/service_bt7"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt7" />
-
-    <Button
-        android:id="@+id/service_bt10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="9dp"
-        android:text="解除绑定远程Service"
-        app:layout_constraintStart_toEndOf="@+id/service_bt7"
-        app:layout_constraintTop_toBottomOf="@+id/service_bt8" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/service_viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_tablayout"
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

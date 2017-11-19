@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tzl.android_collection.major_knowledge_point.ac.NoticePracticeActivity">
+    tools:context="com.tzl.android_collection.major_knowledge_point.notice.NoticePracticeActivity">
 
     <Button
         android:id="@+id/notice_bt1"

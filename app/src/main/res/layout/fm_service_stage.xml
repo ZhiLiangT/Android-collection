@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/fm_service_stage_bt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:text="启动Service" />
+
+            <Button
+                android:id="@+id/fm_service_stage_bt_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="停止Service" />
+
+            <Button
+                android:id="@+id/fm_service_stage_bt_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fm_service_stage_bt_start"
+                android:layout_alignStart="@+id/fm_service_stage_bt_start"
+                android:layout_below="@+id/fm_service_stage_bt_start"
+                android:text="绑定Service" />
+
+            <Button
+                android:id="@+id/fm_service_stage_bt_unbind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fm_service_stage_bt_stop"
+                android:layout_alignStart="@+id/fm_service_stage_bt_stop"
+                android:layout_below="@+id/fm_service_stage_bt_stop"
+                android:text="解除绑定Service" />
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

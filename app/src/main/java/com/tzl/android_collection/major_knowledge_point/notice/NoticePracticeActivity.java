@@ -1,4 +1,4 @@
-package com.tzl.android_collection.major_knowledge_point.ac;
+package com.tzl.android_collection.major_knowledge_point.notice;
 
 import android.app.Notification;
 import android.app.NotificationManager;

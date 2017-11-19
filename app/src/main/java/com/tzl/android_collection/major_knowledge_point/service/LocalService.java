@@ -13,7 +13,7 @@ import android.util.Log;
  * Created by tianzl on 2017/11/18.
  */
 
-public class TestService extends Service {
+public class LocalService extends Service {
 
     private static final String TAG = "TestService";
     public MyBinder bind=new MyBinder();
@@ -24,7 +24,6 @@ public class TestService extends Service {
         super.onCreate();
         Log.i(TAG, "onCreate: ");
     }
-
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
