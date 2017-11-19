@@ -73,14 +73,16 @@
         <service
             android:name=".major_knowledge_point.service.ReceptionService"
             android:enabled="true"
-            android:exported="true"/>
-        <service android:name=".major_knowledge_point.service.LongRangeService"
+            android:exported="true" />
+        <service
+            android:name=".major_knowledge_point.service.LongRangeService"
             android:process=":remote">
             <intent-filter>
-                <action android:name="com.tzl.service.LongRangeService"/>
+                <action android:name="com.tzl.service.LongRangeService" />
             </intent-filter>
         </service>
-
+        <activity android:name=".major_knowledge_point.ac.NoticePracticeActivity"/>
+        <service android:name=".major_knowledge_point.service.MyIntentService"/>
     </application>
 
 </manifest>

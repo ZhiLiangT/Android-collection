@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.major_knowledge_point.ac.NoticePracticeActivity">
+
+    <Button
+        android:id="@+id/notice_bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知栏样式1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notice_bt2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/notice_bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知栏样式2"
+        app:layout_constraintBottom_toTopOf="@+id/notice_bt4"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt1" />
+
+    <Button
+        android:id="@+id/notice_bt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
+        android:text="进度通知栏"
+        app:layout_constraintStart_toEndOf="@+id/notice_bt2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/notice_bt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="自定义布局通知栏"
+        app:layout_constraintStart_toStartOf="@+id/notice_bt1"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

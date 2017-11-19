@@ -7,10 +7,11 @@ import android.widget.Button;
 import com.tzl.android_collection.BaseActivity;
 import com.tzl.android_collection.R;
 import com.tzl.android_collection.major_knowledge_point.ac.BroadcastReceiverActivity;
+import com.tzl.android_collection.major_knowledge_point.ac.NoticePracticeActivity;
 import com.tzl.android_collection.major_knowledge_point.ac.ServiceTestActivity;
 
 public class MajoyKnowPointActivity extends BaseActivity implements View.OnClickListener{
-    private Button bt1,bt2,bt3,bt4;
+    private Button bt1,bt2,bt3,bt4,bt5;
 
     @Override
     public void initContentView() {
@@ -23,6 +24,7 @@ public class MajoyKnowPointActivity extends BaseActivity implements View.OnClick
         bt2= (Button) findViewById(R.id.major_bt2);
         bt3= (Button) findViewById(R.id.major_bt3);
         bt4= (Button) findViewById(R.id.major_bt4);
+        bt5= (Button) findViewById(R.id.major_bt5);
 
     }
 
@@ -37,6 +39,7 @@ public class MajoyKnowPointActivity extends BaseActivity implements View.OnClick
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
         bt4.setOnClickListener(this);
+        bt5.setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +56,10 @@ public class MajoyKnowPointActivity extends BaseActivity implements View.OnClick
             case R.id.major_bt3:
                 break;
             case R.id.major_bt4:
+                break;
+            case R.id.major_bt5:
+                Intent intentNotice=new Intent(this, NoticePracticeActivity.class);
+                startActivity(intentNotice);
                 break;
         }
     }
