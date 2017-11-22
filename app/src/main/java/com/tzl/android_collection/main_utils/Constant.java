@@ -8,6 +8,7 @@ public class Constant {
 
     public static final String RES_PATH="/storage/emulated/0/Test/Collection";
     public static final String DB_PATH=RES_PATH+"/DB/collect.db";
+    public static final String MAIN_ICON_PATH=RES_PATH+"/Res/MainIcon";
 
 
 }

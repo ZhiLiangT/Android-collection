@@ -40,6 +40,7 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
     private LayoutInflater inflater;
     private Map<Integer,Boolean> map;
     private DBHelper dbHelper;
+    private static final String TAG = "ManyTaskDownAdapter";
     public ManyTaskDownAdapter(Context context,List<DownInfo> data){
         this.context=context;
         this.data=data;
@@ -48,7 +49,7 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
     }
 
     public void initMap(){
-        Log.i("ManyTaskDownAdapter","");
+
         map=new LinkedHashMap<>();
         for (int i=0;i<data.size();i++){
             map.put(i,false);
@@ -90,9 +91,11 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
             holder.btPause.setVisibility(View.VISIBLE);
             Log.i("ManyTaskDownAdapter","map:"+map.toString());
             if (map.get(position)){
-                holder.btPause.setText("暂停");
-            }else {
+                listener.onItemPause();
                 holder.btPause.setText("继续");
+            }else {
+                listener.onItemReStart();
+                holder.btPause.setText("暂停");
             }
             holder.seekBar.setVisibility(View.VISIBLE);
             holder.tvCurrSpeed.setVisibility(View.VISIBLE);
@@ -104,7 +107,7 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
             holder.seekBar.setProgress(data.get(position).getProgress());
             int totalSize=data.get(position).getResSize();
             int currSize=data.get(position).getProgress();
-            holder.tvTotalSize.setText(currSize/(1024*1024)+"M/"+totalSize/(1024*1024)+"M");
+            holder.tvTotalSize.setText(currSize+"M/"+totalSize+"M");
         }else {
             //已下载
             holder.btPause.setVisibility(View.GONE);
@@ -149,12 +152,15 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
                             data.get(position).setResState(1);
                             map.put(position,true);
                             notifyDataSetChanged();
-                            updateResState(data.get(position).getResId(),1);
+                            listener.onItemDownClick(data.get(position),holder.seekBar,holder.tvTotalSize,holder.tvCurrSpeed,position);
                         }
                     }
+                }else if (state==1){
+                    //正在下载取消
+                    listener.onItemCancel();
                 }else {
-                    //删除正在下载或已下载
-
+                    //下载完成删除
+                    listener.onItemDelete();
                 }
             }
         });
@@ -173,11 +179,25 @@ public class ManyTaskDownAdapter extends RecyclerView.Adapter<ManyTaskDownAdapte
         }).subscribeOn(Schedulers.io()).subscribe();
     }
 
+    public interface OnItemClickListener{
+        void onItemDownClick(DownInfo downInfo,SeekBar seekBar,TextView tvTotal,TextView tvCurr,int pos);
+        void onItemPause();
+        void onItemDelete();
+        void onItemCancel();
+        void onItemReStart();
+    }
+    private OnItemClickListener listener;
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.listener=listener;
+    }
+
 
     @Override
     public int getItemCount() {
         return data.size();
     }
+
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivIcon;

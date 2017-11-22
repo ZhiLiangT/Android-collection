@@ -46,6 +46,8 @@
         android:thumb="@null"
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
+        android:max="100"
+        android:progress="10"
         android:layout_marginRight="10dp"
         android:layout_toLeftOf="@+id/item_res_pause"
         android:layout_toRightOf="@+id/item_res_img"
