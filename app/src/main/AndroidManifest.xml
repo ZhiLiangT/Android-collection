@@ -22,6 +22,7 @@
     <!-- 用于读取手机当前的状态 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 用于申请调用A-GPS模块 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -39,7 +40,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".custom_view.CustomViewActivity" />
         <activity android:name=".animator.AnimatorActivity" />
@@ -84,15 +89,15 @@
 
         <service android:name=".major_knowledge_point.service.MyIntentService" />
 
-        <activity android:name=".common.down.DownTestActivity"></activity>
-        <activity android:name=".common.down.DownTest2Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".common.down.DownTestActivity" />
+        <activity android:name=".common.down.DownTest2Activity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <service android:name=".common.DownloadService.DownService" />
+
+        <activity android:name=".custom_view.ac.ViewEventActivity">
+
         </activity>
-        <service android:name=".common.DownloadService.DownService"/>
+        <activity android:name=".animator.recycler_effect.RecyclerViewEffectActivity"></activity>
     </application>
 
 </manifest>
