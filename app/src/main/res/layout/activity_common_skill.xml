@@ -39,4 +39,12 @@
         android:text="后台多任务断点下载"
         app:layout_constraintStart_toStartOf="@+id/common_bt3"
         app:layout_constraintTop_toBottomOf="@+id/common_bt3" />
+
+    <Button
+        android:id="@+id/common_bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView span的应用"
+        app:layout_constraintStart_toStartOf="@+id/common_bt4"
+        app:layout_constraintTop_toBottomOf="@+id/common_bt4" />
 </android.support.constraint.ConstraintLayout>

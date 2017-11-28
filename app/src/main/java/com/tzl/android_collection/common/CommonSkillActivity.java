@@ -14,7 +14,7 @@ import com.tzl.android_collection.common.ac.ManyTaskDownActivity;
  */
 public class CommonSkillActivity extends BaseActivity implements View.OnClickListener{
 
-    private Button bt1,bt2,bt3,bt4;
+    private Button bt1,bt2,bt3,bt4,bt5;
 
     @Override
     public void initContentView() {
@@ -27,6 +27,7 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
         bt2= (Button) findViewById(R.id.common_bt2);
         bt3= (Button) findViewById(R.id.common_bt3);
         bt4= (Button) findViewById(R.id.common_bt4);
+        bt5= (Button) findViewById(R.id.common_bt5);
     }
 
     @Override
@@ -40,6 +41,7 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
         bt4.setOnClickListener(this);
+        bt5.setOnClickListener(this);
     }
 
     @Override
@@ -56,6 +58,9 @@ public class CommonSkillActivity extends BaseActivity implements View.OnClickLis
             case R.id.common_bt4:
                 Intent intentDown=new Intent(this, ManyTaskDownActivity.class);
                 startActivity(intentDown);
+                break;
+            case R.id.common_bt5:
+
                 break;
         }
     }
