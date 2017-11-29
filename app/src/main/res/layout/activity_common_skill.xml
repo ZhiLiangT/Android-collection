@@ -47,4 +47,13 @@
         android:text="TextView span的应用"
         app:layout_constraintStart_toStartOf="@+id/common_bt4"
         app:layout_constraintTop_toBottomOf="@+id/common_bt4" />
+
+    <Button
+        android:id="@+id/common_bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android倒计时CountDownTimer"
+        app:layout_constraintStart_toStartOf="@+id/common_bt5"
+        app:layout_constraintTop_toBottomOf="@+id/common_bt5" />
+
 </android.support.constraint.ConstraintLayout>

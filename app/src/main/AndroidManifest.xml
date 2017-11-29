@@ -94,9 +94,10 @@
 
         <service android:name=".common.DownloadService.DownService" />
 
-        <activity android:name=".custom_view.ac.ViewEventActivity"></activity>
+        <activity android:name=".custom_view.ac.ViewEventActivity" />
         <activity android:name=".animator.recycler_effect.RecyclerViewEffectActivity" />
-        <activity android:name=".common.ac.SpanTestActivity"></activity>
+        <activity android:name=".common.ac.SpanTestActivity" />
+        <activity android:name=".custom_view.ac.SchedulingViewActivity"></activity>
     </application>
 
 </manifest>

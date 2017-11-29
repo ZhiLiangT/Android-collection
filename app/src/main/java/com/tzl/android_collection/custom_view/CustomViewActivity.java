@@ -9,13 +9,14 @@ import com.tzl.android_collection.R;
 import com.tzl.android_collection.custom_view.ac.CustomViewPagerTestActivity;
 import com.tzl.android_collection.custom_view.ac.LoweTestActivity;
 import com.tzl.android_collection.custom_view.ac.ProgressTestActivity;
+import com.tzl.android_collection.custom_view.ac.SchedulingViewActivity;
 
 /**
  * 自定义View
  */
 public class CustomViewActivity extends BaseActivity implements View.OnClickListener{
 
-    private Button bt1,bt2,bt3,bt4;
+    private Button bt1,bt2,bt3,bt4,bt5;
 
     @Override
     public void initContentView() {
@@ -32,6 +33,8 @@ public class CustomViewActivity extends BaseActivity implements View.OnClickList
         bt3.setOnClickListener(this);
         bt4= (Button) findViewById(R.id.custom_bt4);
         bt4.setOnClickListener(this);
+        bt5= (Button) findViewById(R.id.custom_bt5);
+        bt5.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +64,11 @@ public class CustomViewActivity extends BaseActivity implements View.OnClickList
                 break;
             case R.id.custom_bt4:
                 break;
+            case R.id.custom_bt5:
+                Intent intent5=new Intent(this, SchedulingViewActivity.class);
+                startActivity(intent5);
+                break;
+
         }
     }
 }

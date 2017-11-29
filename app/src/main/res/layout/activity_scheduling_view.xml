@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tzl.android_collection.custom_view.ac.SchedulingViewActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.tzl.android_collection.custom_view.view.SchedulingView
+            android:id="@+id/main_SchedulingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menuTextColor="#000000"
+            app:menuTextSize="16sp"
+            app:division_color="#cccccc"
+            app:division_width="1dp"
+            app:item_height="50dp"
+            app:menu_color="#ffd699"/>
+
+    </ScrollView>
+</RelativeLayout>
