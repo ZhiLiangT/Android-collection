@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp">
+    <ImageView
+        android:id="@+id/item_dialog_shift_img"
+        android:src="@drawable/selector_item_dialog_shift"
+        android:layout_width="30dp"
+        android:layout_margin="5dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/item_dialog_shift_tv"
+        android:text="早班"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

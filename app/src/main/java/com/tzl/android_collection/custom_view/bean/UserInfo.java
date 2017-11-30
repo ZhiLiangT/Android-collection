@@ -1,5 +1,7 @@
 package com.tzl.android_collection.custom_view.bean;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2017/11/29 0029.
  */
@@ -10,8 +12,7 @@ public class UserInfo {
     private int SingleRow;   //排单
     private int onLineNum;   //线上点单
     private int onDownNum;   //线下点单
-    private int startPosition;  //开始位置
-    private int endPosition;   //结束位置
+    private List<Scheduling> schedulingList;
     public UserInfo(){}
 
     @Override
@@ -22,44 +23,25 @@ public class UserInfo {
                 ", SingleRow=" + SingleRow +
                 ", onLineNum=" + onLineNum +
                 ", onDownNum=" + onDownNum +
-                ", startPosition=" + startPosition +
-                ", endPosition=" + endPosition +
+                ", schedulingList=" + schedulingList +
                 '}';
     }
 
-    public UserInfo(String name, String shift, int singleRow, int onLineNum, int onDownNum, int startPosition, int endPosition) {
+    public UserInfo(String name, String shift, int singleRow, int onLineNum, int onDownNum, List<Scheduling> schedulingList) {
         this.name = name;
         Shift = shift;
         SingleRow = singleRow;
         this.onLineNum = onLineNum;
         this.onDownNum = onDownNum;
-        this.startPosition = startPosition;
-        this.endPosition = endPosition;
+        this.schedulingList = schedulingList;
     }
 
-    public UserInfo(String name, String shift, int singleRow, int onLineNum, int onDownNum) {
-        this.name = name;
-        Shift = shift;
-        SingleRow = singleRow;
-        this.onLineNum = onLineNum;
-        this.onDownNum = onDownNum;
+    public List<Scheduling> getSchedulingList() {
+        return schedulingList;
     }
 
-
-    public int getStartPosition() {
-        return startPosition;
-    }
-
-    public void setStartPosition(int startPosition) {
-        this.startPosition = startPosition;
-    }
-
-    public int getEndPosition() {
-        return endPosition;
-    }
-
-    public void setEndPosition(int endPosition) {
-        this.endPosition = endPosition;
+    public void setSchedulingList(List<Scheduling> schedulingList) {
+        this.schedulingList = schedulingList;
     }
 
     public String getName() {
@@ -101,4 +83,5 @@ public class UserInfo {
     public void setOnDownNum(int onDownNum) {
         this.onDownNum = onDownNum;
     }
+
 }

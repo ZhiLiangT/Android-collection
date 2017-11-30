@@ -7,17 +7,71 @@
     tools:context="com.tzl.android_collection.custom_view.ac.SchedulingViewActivity">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.tzl.android_collection.custom_view.view.SchedulingView
-            android:id="@+id/main_SchedulingView"
+        android:layout_height="match_parent">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menuTextColor="#000000"
-            app:menuTextSize="16sp"
-            app:division_color="#cccccc"
-            app:division_width="1dp"
-            app:item_height="50dp"
-            app:menu_color="#ffd699"/>
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/test_time"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="60dp">
+                <ImageView
+                    android:id="@+id/test_left_bt"
+                    android:src="@mipmap/img_left"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <TextView
+                    android:id="@+id/test_curr_time"
+                    android:text="2017年10月24日"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_centerInParent="true"
+                    android:padding="3dp"
+                    android:background="@drawable/frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/test_right_bt"
+                    android:padding="10dp"
+                    android:src="@mipmap/img_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:id="@+id/test_horizontal"
+                android:layout_below="@+id/test_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.tzl.android_collection.custom_view.view.HorizontalSchedulingView
+                    android:id="@+id/test_scheduling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    app:itemWidth="60dp"
+                    app:division_color="#d6d6c2"
+                    app:item_height="40dp"
+                    app:menu_color="#ffd966"
+                    app:division_width="1dp"
+                    app:menuitem_height="30dp"
+                    app:menuTextSize="16sp"
+                    app:menuTextColor="@android:color/black"
+                    tools:layout_editor_absoluteY="8dp"
+                    tools:layout_editor_absoluteX="8dp" />
+            </HorizontalScrollView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/test_rv_horizontal"
+                android:layout_below="@+id/test_time"
+                android:layout_width="60dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
 
     </ScrollView>
 </RelativeLayout>

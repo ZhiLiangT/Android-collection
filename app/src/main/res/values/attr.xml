@@ -40,13 +40,31 @@
         <attr name="pivPasswordRadius" format="dimension"/>
         <attr name="pivPasswordLength" format="integer"/>
     </declare-styleable>
+    <attr name="item_height" format="dimension"/>
+    <attr name="menu_color" format="color"/>
+    <attr name="division_width" format="dimension"/>
+    <attr name="division_color" format="color"/>
+    <attr name="menuitem_height" format="dimension"/>
+    <attr name="menuTextColor" format="color"/>
+    <attr name="menuTextSize" format="dimension"/>
+    <attr name="itemWidth" format="dimension"/>
     <declare-styleable name="SchedulingView">
-        <attr name="division_width" format="dimension"/>
-        <attr name="division_color" format="color"/>
-        <attr name="item_height" format="dimension"/>
-        <attr name="menu_color" format="color"/>
-        <attr name="menuitem_height" format="dimension"/>
-        <attr name="menuTextColor" format="color"/>
-        <attr name="menuTextSize" format="dimension"/>
+        <attr name="item_height" />
+        <attr name="menu_color" />
+        <attr name="division_width" />
+        <attr name="division_color" />
+        <attr name="menuitem_height" />
+        <attr name="menuTextColor"/>
+        <attr name="menuTextSize"/>
+    </declare-styleable>
+    <declare-styleable name="HorizontalSchedulingView">
+        <attr name="item_height"/>
+        <attr name="menu_color"/>
+        <attr name="division_width"/>
+        <attr name="division_color"/>
+        <attr name="menuitem_height"/>
+        <attr name="menuTextColor"/>
+        <attr name="menuTextSize"/>
+        <attr name="itemWidth"/>
     </declare-styleable>
 </resources>
