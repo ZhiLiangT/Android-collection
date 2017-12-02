@@ -12,10 +12,10 @@ import java.util.List;
 public class DataUtils {
     public static final String [] mainNames=new String[]{"动画","自定义View",
             "数据库","第三方框架","图片处理",
-            "多媒体","重要机制","第三方SDK","新特性","常见技巧"};
+            "多媒体","重要机制","第三方SDK","新特性","常见技巧","性能优化"};
     public static final int [] mainResId={R.mipmap.classify_1,R.mipmap.classify_2,R.mipmap.classify_3
             ,R.mipmap.classify_4,R.mipmap.classify_5,R.mipmap.classify_6,R.mipmap.classify_7,R.mipmap.classify_8,
-            R.mipmap.classify_9,R.mipmap.classify_4};
+            R.mipmap.classify_9,R.mipmap.classify_4,R.mipmap.classify_1};
 
     public static List<ClassifyBean> getClassifyList(){
         List<ClassifyBean> list=new ArrayList<>();
@@ -29,6 +29,7 @@ public class DataUtils {
         list.add(new ClassifyBean(mainNames[7],mainResId[7],7));
         list.add(new ClassifyBean(mainNames[8],mainResId[8],8));
         list.add(new ClassifyBean(mainNames[9],mainResId[9],9));
+        list.add(new ClassifyBean(mainNames[10],mainResId[10],10));
         return list;
     }
 //    ist.add(new ClassifyBean(mainNames[0],mainResId[0],0));

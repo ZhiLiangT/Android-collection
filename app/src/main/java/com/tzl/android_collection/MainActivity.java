@@ -18,6 +18,7 @@ import com.tzl.android_collection.main_utils.MainRvAdapter;
 import com.tzl.android_collection.major_knowledge_point.MajoyKnowPointActivity;
 import com.tzl.android_collection.multi_media.MultiMediaActivity;
 import com.tzl.android_collection.new_features.NewFeaturesActivity;
+import com.tzl.android_collection.perform_optimize.PerformOptimizeActivity;
 import com.tzl.android_collection.photo_manage.PhotoManageActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -80,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 9:
                         intent.setClass(MainActivity.this, CommonSkillActivity.class);
+                        break;
+                    case 10:
+                        intent.setClass(MainActivity.this, PerformOptimizeActivity.class);
                         break;
                 }
                 startActivity(intent);
