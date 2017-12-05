@@ -98,7 +98,8 @@
         <activity android:name=".animator.recycler_effect.RecyclerViewEffectActivity" />
         <activity android:name=".common.ac.SpanTestActivity" />
         <activity android:name=".custom_view.ac.SchedulingViewActivity" />
-        <activity android:name=".perform_optimize.PerformOptimizeActivity"></activity>
+        <activity android:name=".perform_optimize.PerformOptimizeActivity" />
+        <activity android:name=".multi_media.ac.AudioPlayDetailsActivity"></activity>
     </application>
 
 </manifest>

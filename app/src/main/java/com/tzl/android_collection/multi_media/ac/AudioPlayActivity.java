@@ -54,7 +54,12 @@ public class AudioPlayActivity extends BaseActivity {
 
     @Override
     public void initEvent() {
+        audioAdapter.setOnItemClickListener(new AudioAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(AudioBean audioBean) {
 
+            }
+        });
     }
 
 }

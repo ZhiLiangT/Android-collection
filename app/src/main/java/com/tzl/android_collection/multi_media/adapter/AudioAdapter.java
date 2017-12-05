@@ -34,8 +34,21 @@ public class AudioAdapter extends RecyclerView.Adapter<AudioAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.tvName.setText(mData.get(position).getTitle());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClick(mData.get(position));
+            }
+        });
+    }
+    public interface OnItemClickListener{
+        void onItemClick(AudioBean audioBean);
+    }
+    private OnItemClickListener listener;
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.listener=listener;
     }
 
     @Override
