@@ -1,5 +1,6 @@
 package com.tzl.android_collection.multi_media.ac;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -57,6 +58,9 @@ public class AudioPlayActivity extends BaseActivity {
         audioAdapter.setOnItemClickListener(new AudioAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(AudioBean audioBean) {
+                Intent intent=new Intent(AudioPlayActivity.this,AudioPlayDetailsActivity.class);
+                intent.putExtra("AUDIO",audioBean);
+                startActivity(intent);
 
             }
         });

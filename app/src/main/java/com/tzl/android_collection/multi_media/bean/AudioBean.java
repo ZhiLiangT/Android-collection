@@ -1,10 +1,13 @@
 package com.tzl.android_collection.multi_media.bean;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by tianzl on 2017/11/7.
  */
 
-public class AudioBean {
+public class AudioBean implements Parcelable {
     private String fileName;
     private String title;
     private int duration;
@@ -27,6 +30,7 @@ public class AudioBean {
         this.size = size;
         this.fileUrl = fileUrl;
     }
+
 
     @Override
     public String toString() {
@@ -114,4 +118,46 @@ public class AudioBean {
     public void setFileUrl(String fileUrl) {
         this.fileUrl = fileUrl;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.fileName);
+        dest.writeString(this.title);
+        dest.writeInt(this.duration);
+        dest.writeString(this.singer);
+        dest.writeString(this.album);
+        dest.writeString(this.year);
+        dest.writeString(this.type);
+        dest.writeString(this.size);
+        dest.writeString(this.fileUrl);
+    }
+
+    protected AudioBean(Parcel in) {
+        this.fileName = in.readString();
+        this.title = in.readString();
+        this.duration = in.readInt();
+        this.singer = in.readString();
+        this.album = in.readString();
+        this.year = in.readString();
+        this.type = in.readString();
+        this.size = in.readString();
+        this.fileUrl = in.readString();
+    }
+
+    public static final Parcelable.Creator<AudioBean> CREATOR = new Parcelable.Creator<AudioBean>() {
+        @Override
+        public AudioBean createFromParcel(Parcel source) {
+            return new AudioBean(source);
+        }
+
+        @Override
+        public AudioBean[] newArray(int size) {
+            return new AudioBean[size];
+        }
+    };
 }
